@@ -12,7 +12,7 @@ protected: Accessible inside the class and its child classes.
 
 readonly: Can be assigned only during declaration or inside the constructor.
 
-Example:
+```Example:
 
 class BankAccount {
   public readonly id: string;
@@ -29,7 +29,7 @@ class BankAccount {
     if (amount > 0) this.balance += amount;
   }
 }
-
+```
 Here, id cannot be changed, balance is private, and child classes can access holder. The deposit() method is available from anywhere.
 
 In conclusion, access modifiers help achieve encapsulation by controlling data access and preventing unwanted changes.
